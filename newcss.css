@@ -1,0 +1,44 @@
+
+@media only screen and (max-width: 600px) {
+    .size{
+        font-size:large;
+        /* margin-right:1px; */
+    }
+    .img{
+        width:80px;
+        height: 80px;
+    }
+    .imgheight{
+        height:30vh;
+    }
+    .heading{
+        font-size: 50px;
+        text-align: center;
+    }
+  }
+  @media only screen and (min-width:599px) {
+    .size{
+        font-size:x-large;
+        /* margin-right:1px; */
+    }
+    .img{
+        margin-left:-10%;
+        width:100px;
+        height:100px;
+    }
+    .heading{
+        font-size: 100px;
+        text-align: center;
+    }
+    .imgheight{
+        height:50vh;
+    }
+  }
+  #C4
+  {
+      font-size: 60px;
+      text-align: center;
+      color: antiquewhite;
+      
+     
+  }

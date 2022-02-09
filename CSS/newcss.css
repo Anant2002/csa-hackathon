@@ -2,6 +2,7 @@
 @media only screen and (max-width: 600px) {
     .size{
         font-size:large;
+       
         /* margin-right:1px; */
     }
     .img{
@@ -23,14 +24,26 @@
         font-size:30px;
        
     }
+    .size1{
+        font-size:large;
+        text-align: right;
+        /* margin-right:1px; */
+    }
   }
   @media only screen and (min-width:599px) {
     .size{
         font-size:x-large;
+       
+        /* margin-right:1px; */
+    }
+    .size1{
+        font-size:x-large;
+        text-align: right;
+      
         /* margin-right:1px; */
     }
     .img{
-        margin-left:-10%;
+        margin-left:1%;
         width:100px;
         height:100px;
     }

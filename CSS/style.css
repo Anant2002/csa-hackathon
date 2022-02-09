@@ -5,7 +5,7 @@
 	scroll-behavior: smooth;
 }
 .wrapper{
-	background: url(im3.png) no-repeat;
+	background: url(../IMG/im3.png) no-repeat;
 	background-size: cover;
 	height: 50vh;
 }

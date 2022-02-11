@@ -35,8 +35,8 @@
         /* margin-right:1px; */
     }
     .divtimer{
-      margin-left: 10%;
-      padding-bottom: 5px;
+      margin-left:36%;
+
     }
   }
 /*     @media only screen and (min-width:760px) {
@@ -76,9 +76,9 @@
     .timer{
         color:white;
         text-align:center;
-        margin-right:2%;
+        /*margin-right:2%;*/
         /*padding-top:20%;*/
-        margin-top:80%;
+        margin-top:82%;
     /*    margin-right:10%;*/
         font-size:30px;
         background-color:rgba(0,0,0,0.4);
@@ -88,8 +88,8 @@
        
     }
     .divtimer{
-      margin-left: 80%;
-       padding-bottom: 5px;
+      margin-left:84%;
+       
     }
   }
   #C4

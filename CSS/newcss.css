@@ -1,6 +1,29 @@
-#more {display: none;}
+
 @media only screen and (max-width: 600px) {
-    .size{
+  #more {display: none;} 
+  .morebutton{
+    color: white;
+    background-color: transparent;
+   border: 5px solid black;
+   border-radius:30px;
+   padding-bottom:5px;
+   padding-right:13px;
+   padding-left:13px;
+   margin-left:30%;
+   margin-top:5%;
+  } 
+  .morebutton:hover{
+    color: white;
+    background-color:black;
+   border: 5px solid black;
+   border-radius:30px;
+   padding-bottom:5px;
+   padding-right:13px;
+   padding-left:13px;
+   margin-left:30%;
+   margin-top:5%;
+  } 
+  .size{
         font-size:large;
        
         /* margin-right:1px; */
@@ -42,6 +65,7 @@
   }
 
   @media only screen and (min-width: 600px) and (max-device-width: 830px) {
+  
     .dot{
       display: none;
     }

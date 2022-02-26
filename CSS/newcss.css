@@ -1,5 +1,74 @@
 
 @media only screen and (max-width: 600px) {
+  #more {display: none;} 
+  .morebutton{
+    color: white;
+    background-color: transparent;
+   border: 5px solid black;
+   border-radius:30px;
+   padding-bottom:5px;
+   padding-right:13px;
+   padding-left:13px;
+   margin-left:30%;
+   margin-top:5%;
+  } 
+  .morebutton:hover{
+    color: white;
+    background-color:black;
+   border: 5px solid black;
+   border-radius:30px;
+   padding-bottom:5px;
+   padding-right:13px;
+   padding-left:13px;
+   margin-left:30%;
+   margin-top:5%;
+  } 
+  .size{
+        font-size:large;
+       
+        /* margin-right:1px; */
+    }
+    .img{
+        width:80px;
+        height: 80px;
+    }
+    .imgheight{
+        height:fit-content;
+    }
+    .heading{
+        font-size: 40px;
+        text-align: center;
+        overflow: hidden;
+    }
+    .timer{
+        color:white;
+        text-align:center;
+        /*padding-top:20%;*/
+        margin-top:50%;
+        margin-left:40%;
+        font-size:20px;
+        background-color:rgba(0,0,0,0.7);
+        width:fit-content;
+        height:fit-content;
+  
+       
+    }
+    .size1{
+        font-size:large;
+        /* text-align: right; */
+        /* margin-right:1px; */
+    }
+    .divtimer{
+      margin-left:36%;
+
+    }
+  }
+
+  @media only screen and (min-width: 600px) and (max-device-width: 830px) {
+  
+    .dot{
+      display: none;
+    }
     .size{
         font-size:large;
        
@@ -21,7 +90,7 @@
         text-align:center;
         /*padding-top:20%;*/
         margin-top:50%;
-        margin-left:50%;
+        margin-left:65%;
         font-size:20px;
         background-color:rgba(0,0,0,0.7);
         width:fit-content;
@@ -31,7 +100,7 @@
     }
     .size1{
         font-size:large;
-        text-align: right;
+        /* text-align: right; */
         /* margin-right:1px; */
     }
     .divtimer{
@@ -46,7 +115,10 @@
    }*/
 
 
-  @media only screen and (min-width:599px) {
+  @media only screen and (min-width:831px) {
+    .dot{
+      display: none;
+    }
     .size{
         font-size:x-large;
        text-align:right;

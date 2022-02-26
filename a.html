@@ -8,7 +8,7 @@
 <!--  <link rel="stylesheet" href="CSS/style.css"> -->
   <link rel="stylesheet" href="CSS/newcss.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
 <body>
@@ -17,17 +17,17 @@
       <div style="background-color:rgba(0,0,0,0.4);" >
     <div class="container-fluid" >
         <div class="row" >
-          <div class="col-xs-5 col-sm-7  col-md-8 col-lg-7"><img class="img" src="IMG/logo.png" ></div>
-         
-          <div class="col-xs-2 col-sm-2  col-md-1 col-lg-2 size" style="margin-top:30px; margin-left:-60px; " ><a class="active" href="#"><span style="color:white; "><b>Home</b></span></a></div>
+          <div class="col-xs-5 col-sm-7 col-md-8 col-lg-7"><img class="img" src="IMG/logo.png" ></div>
+         <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2 size" style="margin-top:30px;" ><a class="active" href="#"><span style="color:white; "><b>Home</b></span></a></div>
           <div class="col-xs-5 col-sm-3  col-md-3 col-lg-3 size1 " style="margin-top:30px;"><a href="#C4"><span style="color:white ;"><b>Register Here</b></span></a></div>
         </div>
       </div>
     </div>
 
-   <div class="divtimer"><!--  <p id="demo" class="timer" >COMMING SOON</p> -->
-    <p class="timer" style="padding:2px 5px 2px 5px;" >COMING SOON</p>
-   </div>
+    <div class="divtimer"> 
+      <!-- <p id="demo" class="timer" >COMMING SOON</p> -->
+      <p class="timer" style="padding:2px 5px 2px 5px;" >COMING SOON</p>
+     </div>
 </div>
     <h1 class="heading">HACKATHON 1.0</h1>
   
@@ -36,11 +36,13 @@
         <h3 style="border-style: dashed"id="C4">ABOUT</h3>
         <br>
         <p style="color:antiquewhite; font-size:x-large; margin-left:5%; margin-right:5%;  ">UPES CSA believes in the technical advancement and innovation of the society, and with its very first Hackathon,
-we intend to invite people from all over to present their best ideas.UPES CSA Student Chapter believes in progressing in such a manner that benefits the community and helps others to grow as well. With the same thought, we present before you,
+we intend to invite people from all over to present their best ideas.UPES CSA Student Chapter believes in progressing in such a manner that benefits the community and helps others to grow as well.<span id="dots" class="dot">...</span><span id="more"> With the same thought, we present before you,
 CSA Hackathon 1.0.The problem statements included in the Hackathon will comprise of two sections. One set of statements will be collected from companies and the other set of problems will
 be collected from NGOs and Police Departments. However,both sets will focus on social problems and causes and will aim at finding the solution for the same.
 This Hackathon will not only allow students to learn, practice,and put their knowledge and skills to the test but will also get a chance to ponder about the problems and issues
-prevailing in our society and how can those be resolved.Moreover, it will allow them to contribute towards the society and make it a better place.
+prevailing in our society and how can those be resolved.Moreover, it will allow them to contribute towards the society and make it a better place.</span>
+<br>
+<button onclick="myFunction()" id="myBtn" class="dot morebutton" >Read more</button>
              <br>
              <br>
              
@@ -76,4 +78,22 @@ prevailing in our society and how can those be resolved.Moreover, it will allow 
     
 </body>
 <script type="text/javascript" src="JS/timer.js"></script>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+
 </html>

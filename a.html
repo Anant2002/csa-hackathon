@@ -36,11 +36,13 @@
         <h3 style="border-style: dashed"id="C4">ABOUT</h3>
         <br>
         <p style="color:antiquewhite; font-size:x-large; margin-left:5%; margin-right:5%;  ">UPES CSA believes in the technical advancement and innovation of the society, and with its very first Hackathon,
-we intend to invite people from all over to present their best ideas.UPES CSA Student Chapter believes in progressing in such a manner that benefits the community and helps others to grow as well. With the same thought, we present before you,
+we intend to invite people from all over to present their best ideas.UPES CSA Student Chapter believes in progressing in such a manner that benefits the community and helps others to grow as well.<span id="dots" class="dot">...</span><span id="more"> With the same thought, we present before you,
 CSA Hackathon 1.0.The problem statements included in the Hackathon will comprise of two sections. One set of statements will be collected from companies and the other set of problems will
 be collected from NGOs and Police Departments. However,both sets will focus on social problems and causes and will aim at finding the solution for the same.
 This Hackathon will not only allow students to learn, practice,and put their knowledge and skills to the test but will also get a chance to ponder about the problems and issues
-prevailing in our society and how can those be resolved.Moreover, it will allow them to contribute towards the society and make it a better place.
+prevailing in our society and how can those be resolved.Moreover, it will allow them to contribute towards the society and make it a better place.</span>
+<br>
+<button onclick="myFunction()" id="myBtn" class="dot1" >Read more</button>
              <br>
              <br>
              
@@ -76,4 +78,22 @@ prevailing in our society and how can those be resolved.Moreover, it will allow 
     
 </body>
 <script type="text/javascript" src="JS/timer.js"></script>
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
+
 </html>

@@ -1,4 +1,4 @@
-
+#more {display: none;}
 @media only screen and (max-width: 600px) {
     .size{
         font-size:large;
@@ -42,6 +42,9 @@
   }
 
   @media only screen and (min-width: 600px) and (max-device-width: 830px) {
+    .dot{
+      display: none;
+    }
     .size{
         font-size:large;
        
@@ -89,6 +92,9 @@
 
 
   @media only screen and (min-width:831px) {
+    .dot{
+      display: none;
+    }
     .size{
         font-size:x-large;
        text-align:right;

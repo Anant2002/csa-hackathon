@@ -1,6 +1,20 @@
 
 @media only screen and (max-width: 600px) {
+
+  .content{
+    padding: 15px 15px 15px 17px;
+    background-color:antiquewhite;
+    border-radius: 4px;
+    width: fit-content;
+    
+}
   #more {display: none;} 
+  .main-container{
+    position: relative;
+    width:100%;
+    
+}
+  
   .morebutton{
     color: white;
     background-color: transparent;
@@ -65,7 +79,17 @@
   }
 
   @media only screen and (min-width: 600px) and (max-device-width: 830px) {
-  
+    .main-container{
+      position: relative;
+      width:100%;
+      
+  }
+    .content{
+      padding: 15px 15px 15px 17px;
+      background-color:antiquewhite;
+      border-radius: 4px;
+      
+  }
     .dot{
       display: none;
     }
@@ -116,6 +140,18 @@
 
 
   @media only screen and (min-width:831px) {
+    .main-container{
+      position: relative;
+      width:70%;
+      margin-left:15%;
+      
+  }
+    .content{
+      padding: 15px 15px 15px 17px;
+      background-color:antiquewhite;
+      border-radius: 4px;
+      
+  }
     .dot{
       display: none;
     }

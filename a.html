@@ -10,7 +10,371 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    
     <style>
+         ////////////////////////////////
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+
+////////////////////////////////
+
+h2 { color: $color-dark; font-size: 32px; margin: 0 0 10px 0;}
+h3 { color: $color-red; font-size: 16px; margin: 0 0 5px 0;}
+p { color: $color-dark;  font-size: 20px; margin: 0 0 20px 0;}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;         
+}
+
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  /* background-image: radial-gradient(circle, #292929, #202020, #181818, #0f0f0f, #000000); */
+  /* max-width: 1140px; */
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #ffffff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.containertimeline {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.containertimeline.left {
+  left: 0;
+}
+
+.containertimeline.right {
+  left: 50%;
+}
+
+.containertimeline::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.containertimeline.right::after {
+  left: -8px;
+}
+
+.containertimeline::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.containertimeline.right::before {
+  left: 8px;
+}
+
+.containertimeline .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.containertimeline.left .date {
+  right: -100px;
+}
+
+.containertimeline.right .date {
+  left: -100px;
+}
+
+.containertimeline .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background-image:linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  border: 2px solid #ffffff;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffffff;
+  z-index: 1;
+}
+
+.containertimeline.left .icon {
+  right: 56px;
+}
+
+.containertimeline.right .icon {
+  left: 56px;
+}
+
+.containertimeline .contenttimeline {
+  padding: 30px 90px 30px 30px;
+  background-image:linear-gradient(127deg, #a759d1 0%, #8261ee 91%);
+  position: relative;
+  border-radius: 500px 500px 500px 500px;
+}
+
+.containertimeline.right .contenttimeline {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 500px 500px 500px;
+}
+
+.containertimeline .contenttimeline h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.containertimeline .contenttimeline p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .containertimeline {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .containertimeline.right {
+    left: 0%;
+  }
+
+  .containertimeline.left::after, 
+  .containertimeline.right::after {
+    left: 82px;
+  }
+
+  .containertimeline.left::before,
+  .containertimeline.right::before {
+    left: 100px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .containertimeline.left .date,
+  .containertimeline.right .date {
+    right: auto;
+    left: 4px;
+  }
+
+  .containertimeline.left .icon,
+  .containertimeline.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .containertimeline.left .contenttimeline,
+  .containertimeline.right .contenttimeline {
+    padding: 15px 25px 15px 80px;
+    border-radius: 500px 500px 500px 500px;
+  }
+}
+
+        HTML CSSResult Skip Results Iframe
+EDIT ON
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:400,400i,700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+.quote-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 10vh auto 0; /*OPTIONAL MARGIN*/
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  /*BLUE BG*/
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 128, 172, 1) 0%,
+    rgba(0, 128, 172, 1) 70%,
+    rgba(0, 128, 172, 0) 70.3%
+  );
+  /*RED BG
+  background: radial-gradient(
+    ellipse at center,
+    rgba(210, 20, 20, 1) 0%,
+    rgba(210, 20, 20, 1) 70%,
+    rgba(210, 20, 20, 0) 70.3%
+  );*/
+  position: relative;
+  margin: 0;
+  color: white;
+}
+
+.text p {
+  height: 100%;
+  font-size: 21px;
+  line-height: 1.25;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.text::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: left;
+  shape-outside: polygon(
+    0 0,
+    98% 0,
+    50% 6%,
+    23.4% 17.3%,
+    6% 32.6%,
+    0 50%,
+    6% 65.6%,
+    23.4% 82.7%,
+    50% 94%,
+    98% 100%,
+    0 100%
+  );
+  shape-margin: 7%;
+}
+
+.text p::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  float: right;
+  shape-outside: polygon(
+    2% 0%,
+    100% 0%,
+    100% 100%,
+    2% 100%,
+    50% 94%,
+    76.6% 82.7%,
+    94% 65.6%,
+    100% 50%,
+    94% 32.6%,
+    76.6% 17.3%,
+    50% 6%
+  );
+  shape-margin: 7%;
+}
+
+.quote-wrapper blockquote footer {
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  font-size: 17px;
+  text-align: center;
+  font-style: italic;
+  text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.quote-wrapper::before {
+  content: "\201C";
+  font-size: 270px;
+  height: 82px;
+  line-height: 0.78;
+  line-height: 1;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  z-index: 1;
+  font-family: sans-serif, serif;
+  color: #ccc;
+  opacity: 0.9;
+}
+
+@media (min-width: 850px) {
+  .quote-wrapper {
+    width: 370px;
+    height: 370px;
+  }
+
+  .quote-wrapper::before {
+    font-size: 300px;
+  }
+
+  .text p {
+    font-size: 26px;
+  }
+
+  .quote-wrapper blockquote footer {
+    bottom: 32px;
+  }
+}
+
+/*THIS CSS IS NOT REQUIRED FOR CIRCULAR TEXT*/
+/*THIS CSS IS NOT REQUIRED FOR CIRCULAR TEXT*/
+
+.note {
+  margin: 5vw;
+  padding: 0.5em;
+  border-left: 0.5em solid #52e052;
+  background: #e9fbe9;
+}
+
+.note a {
+  text-decoration: none;
+  color: #161b1e;
+}
+
+.note a:hover {
+  text-decoration: underline;
+}
+
+
+
+Resources1× 0.5× 0.25×Rerun
     
     /*creating line for timeline*/
     @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
@@ -23,10 +387,8 @@
 }
 body{
     font-family: 'Playfair Display', serif;
-    display: grid;
-    background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #61c5ff 100%);
-
+    display: grid;   
+    background-image: url('IMG/img3.jpg');
     align-content: center;
     min-height: 100vh;
 }
@@ -64,7 +426,7 @@ margin:50px auto
     opacity: 0.9;
 }
 .content span{
-    height: 0.5px;
+    height: 0.1px;
     width: 80px;
     background: #777;
     margin: 30px 0;
@@ -191,17 +553,15 @@ margin:50px auto
        
         padding: 10px 40px;
         position: relative;
-        width:51%;
-        box-sizing: border-box;
-        margin: 50px 0;
-        
-    }
+        width:35%;
+        height: auto;   
+        }
     .text-wrapper::after{
         content: '';
         position: absolute;
         width: 30px;
         height: 25px;
-        right: -10px;
+        right: -1rem;
         background-color:antiquewhite;
         top:15px;
         border-radius: 50%;
@@ -209,7 +569,7 @@ margin:50px auto
     }
     /*for left events*/
     .left{
-        left: 0;
+        left: 16%;      
         
     }
     /*for right events*/
@@ -239,31 +599,39 @@ margin:50px auto
       </style>
   </head>
 <body>
-    
-    <div style="background-image:url('IMG/im3.png'); width: 100%;" class="imgheight">
-      <div style="background-color:rgba(0,0,0,0.4);" >
-    <div class="container-fluid" >
-        <div class="row" >
-          <div class="col-xs-5 col-sm-7 col-md-8 col-lg-7"><img class="img" src="IMG/logo.png" ></div>
-         <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2 size" style="margin-top:30px;" ><a class="active" href="#"><span style="color:white; "><b>Home</b></span></a></div>
-          <div class="col-xs-5 col-sm-3  col-md-3 col-lg-3 size1 " style="margin-top:30px;"><a href="#C4"><span style="color:white ;"><b>Register Here</b></span></a></div>
-        </div>
+ 
+    <div style="background-color:rgba(0,0,0,0.4);" >
+  <div class="container-fluid" >
+      <div class="row" >
+        <div class="col-xs-5 col-sm-7 col-md-8 col-lg-7"><img class="img" src="IMG/logo.png" ></div>
+       <div class="col-xs-2 col-sm-2 col-md-1 col-lg-2 size" style="margin-top:30px;" ><a class="active" href="#"><span style="color:white; "><b>Home</b></span></a></div>
+        <div class="col-xs-5 col-sm-3  col-md-3 col-lg-3 size1 " style="margin-top:30px;"><a href="#C4"><span style="color:white ;"><b>Register Here</b></span></a></div>
       </div>
     </div>
+  </div>
+    
     
 
-    <div style="padding-top: 5rem;" class="divtimer"> 
-      <p id="demo" class="timer"></p> 
+    
       
-</div>
-</div>
+
+
     <h1 class="heading">HACKATHON 1.0</h1>
+    
+   
+<div style="padding-bottom: 3rem;" class="divtimer"> 
+    <p id="demo" class="timer"></p> </div>     
+  </div>
+  </div>
+
+    
   
-    <section>
+    <section style="padding-top: 10px;">
       <div style="padding-left:27px;padding-top: 19rem;"  class = "image">
          <img src="IMG/grp.jpg">  
            
       </div>    
+      
 
       <div  class = "content">
           <h2>About UPES CSA</h2>
@@ -276,105 +644,147 @@ margin:50px auto
             prevailing in our society and how can those be resolved.Moreover, it will allow them to contribute towards the society and make it a better place.</p>
       </div>
   </section>
+
         
     
-        <div style="background-color: #12192c;padding-top: 2%;border-style: double;border-width: 10px;border-color: #fff;border-radius: 15px;">
-          <br>
-          <h3 style="border-style: dashed; " id="C4">Vision</h3>
-          <br>
-          <p style="color:antiquewhite; font-size:x-large; margin-left:5%; margin-right:5%;">UPES CSA Hackathon 1.0 is 
-            formulated with the vision to focus 
-            on the ideas and problem solving 
-            approach of the inquisitive 
-            participants.
-            
-            Hackathon 1.0 will not comprise of 
-            any limitations or technical 
-            restrictions, as we firmly believe 
-            that innovation cannot be truly 
-            actualized under bounded 
-            conditions, the participants
-            
-            will be free to code, design, 
-            prototype their solutions as per 
-            their own convenience.
-               <br>
-               <br>
-               
-          </p>
-        </div>
-        <div style="background-color: #2a294a;"  >
-          <div style="padding-bottom: 7%; padding-top: 4%;" class="main-container">
-            <h2 style="color: white;padding-left: 380px;font-size: 80px;">TIMELINE</h2>
-            <!-- event 1st of timeline -->
-            <div class="text-wrapper left" >
-                <!-- all text content of timeline -->
-                <div class="content">
-                    <h3 style="color: white;">14TH April 2022</h3>
-                    <p style="color: white;">Presentation Round</p>
-                </div>
-            </div>
-            <!-- event 1st of timeline -->
-            <div class="text-wrapper right">
-                <!-- all text content of timeline -->
-                <div class="content">
-                    <h3 style="color: white;">15TH April 2022 10:00AM</h3>
-                    <p style="color: white;">IDEA SUBMITION PRESENTATION</p>
-                </div>
-            </div>
-            <!-- event 1st of timeline -->
-            <div class="text-wrapper left">
-                <!-- all text content of timeline -->
-                <div class="content">
-                    <h3 style="color: white;">15TH April 2022 4:00PM</h3>
-                    <p style="color: white;">RESULT PHASE 1</p>
-                </div>
-            </div>
-            <!-- event 1st of timeline -->
-            <div class="text-wrapper right">
-                <!-- all text content of timeline -->
-                <div class="content">
-                    <h3 style="color: white;">15TH April 2022 5:00PM</h3>
-                    <p style="color: white;">CODING START</p>
-                </div>
-            </div>
-            <div class="text-wrapper left">
-              <!-- all text content of timeline -->
-              <div class="content">
-                  <h3 style="color: white;">16TH April 2022 10:00AM</h3>
-                  <p style="color: white;">FIRST EVALUATION</p>
+  <div class="quote-wrapper">
+    <blockquote class="text" cite="http://www.inspireux.com/category/quotes/jesse-james-garrett/">
+      <p style="font-size: 26px;"><u>VISION</u>
+        A leader has the vision that a dream can be achieved.He inspires the power to get it done.
+      </p>
+      <footer style="color: wheat;">– Jesse James Garrett</footer>
+    </blockquote>
+  </div>
+  
+  <!--THIS HTML IS NOT REQUIRED FOR CIRCULAR TEXT-->
+  <p style="border-radius: 15px;" class="note">UPES CSA Hackathon 1.0 is 
+    formulated with the vision to focus 
+    on the ideas and problem solving 
+    approach of the inquisitive 
+    participants.
+    
+    Hackathon 1.0 will not comprise of 
+    any limitations or technical 
+    restrictions, as we firmly believe 
+    that innovation cannot be truly 
+    actualized under bounded 
+    conditions, the participants
+    
+    will be free to code, design, 
+    prototype their solutions as per 
+    their own convenience.</a>
+    <h2 style="padding-left: 65rem;color: orange;font-size: 60px;">TIMELINE</h2>
+
+     
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="hr"></div>
               </div>
           </div>
-          <div class="text-wrapper right">
-            <!-- all text content of timeline -->
-            <div class="content">
-                <h3 style="color: white;">16TH April 2022 1:00PM</h3>
-                <p style="color: white;">FIRST ELIMINATION</p>
-            </div>
-        </div>
-        <div class="text-wrapper left">
-          <!-- all text content of timeline -->
-          <div class="content">
-              <h3 style="color: white;">16TH April 2022 8:00PM</h3>
-              <p style="color: white;">SECOND EVALUATION</p>
+      </div>
+  </section>
+  <div class="timeline" id="timeline">
+      <div class="containertimeline left">
+          <div class="date">19 March</div>
+          <i class="icon fa fa-home"></i>
+          <div class="contenttimeline">
+              <h2>10 a.m</h2>
+              <p>
+                  Hackathon Kickoff and Inaugration
+              </p>
           </div>
       </div>
-      <div class="text-wrapper right">
-        <!-- all text content of timeline -->
-        <div class="content">
-            <h3 style="color: white;">16TH April 2022 10:00PM</h3>
-            <p style="color: white;">SECOND ELEMINATION</p>
+      <div class="containertimeline right">
+          <div class="date">19 March</div>
+          <i class="icon fa fa-gift"></i>
+          <div class="contenttimeline">
+              <h2>11 a.m</h2>
+              <p>
+                  Implementation phase starts
+              </p>
+          </div>
+      </div>
+      <div class="containertimeline left">
+          <div class="date">19 March</div>
+          <i class="icon fa fa-user"></i>
+          <div class="contenttimeline">
+              <h2>7 p.m</h2>
+              <p>
+                  Mentor interaction and idea pitching to mentor for guidance
+              </p>
+          </div>
+      </div>
+      <div class="containertimeline right">
+          <div class="date">20 March</div>
+          <i class="icon fa fa-running"></i>
+          <div class="contenttimeline">
+              <h2>10 p.m</h2>
+              <p>
+                  Final submission
+              </p>
+          </div>
+      </div>
+      <div class="containertimeline left">
+          <div class="date">21 March</div>
+          <i class="icon fa fa-cog"></i>
+          <div class="contenttimeline">
+              <h2>1 p.m</h2>
+              <p>
+                  Result declaration and closing ceremony
+              </p>
+          </div>
+      </div>
+      <div class="containertimeline right">
+        <div class="date">19 March</div>
+        <i class="icon fa fa-gift"></i>
+        <div class="contenttimeline">
+            <h2>11 a.m</h2>
+            <p>
+                Implementation phase starts
+            </p>
         </div>
     </div>
-    <div class="text-wrapper left">
-      <!-- all text content of timeline -->
-      <div class="content">
-          <h3 style="color: white;">17TH April 2022 11:00AM</h3>
-          <p style="color: white;">PRESENTATION ROUND (FINAL)</p>
+    <div class="containertimeline left">
+          <div class="date">19 March</div>
+          <i class="icon fa fa-gift"></i>
+          <div class="contenttimeline">
+              <h2>11 a.m</h2>
+              <p>
+                  Implementation phase starts
+              </p>
+          </div>
+      </div>
+      <div class="containertimeline right">
+        <div class="date">19 March</div>
+        <i class="icon fa fa-gift"></i>
+        <div class="contenttimeline">
+            <h2>11 a.m</h2>
+            <p>
+                Implementation phase starts
+            </p>
+        </div>
+    </div>
+    <div class="containertimeline left">
+      <div class="date">19 March</div>
+      <i class="icon fa fa-gift"></i>
+      <div class="contenttimeline">
+          <h2>11 a.m</h2>
+          <p>
+              Implementation phase starts
+          </p>
       </div>
   </div>
-        </div>
-      </div>
+  <div class="containertimeline right">
+    <div class="date">19 March</div>
+    <i class="icon fa fa-gift"></i>
+    <div class="contenttimeline">
+        <h2>11 a.m</h2>
+        <p>
+            Implementation phase starts
+        </p>
+    </div>
+</div>
+  </div>
 
       
     

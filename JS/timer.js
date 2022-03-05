@@ -1,3 +1,6 @@
+
+
+
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
@@ -40,4 +43,9 @@ var x = setInterval(function() {
     document.getElementById("demo").innerHTML = "EXPIRED";
   }
 }, 1000);
+
+//generate event/cards on the timeline
+
+
+
 

@@ -1,7 +1,9 @@
 
 @media only screen and (max-width: 600px) {
   
-
+  .time-line{
+    padding-left: 29rem;color: orange;font-size: 60px;
+  }
   .content{
     padding: 15px 10px 15px 17px;
     border-radius: 4px;
@@ -13,9 +15,7 @@
     position: relative;
     width:100%;
     
-}
-
-  
+}  
   .morebutton{
     color: white;
     background-color: transparent;
@@ -81,6 +81,9 @@
   }
 
   @media only screen and (min-width: 600px) and (max-device-width: 830px) {
+    .time-line{
+      padding-left: 30rem;color: orange;font-size: 60px;
+    }
     .main-container{
       position: relative;
       width:100%;
@@ -142,6 +145,9 @@
 
 
   @media only screen and (min-width:831px) {
+    .time-line{
+      padding-left: 58rem;color: orange;font-size: 60px;
+    }
     .main-container{
       position: relative;
       width:70%;
@@ -235,8 +241,8 @@ h1 {
   text-fill-color: transparent;
   background-image: linear-gradient(45deg, 
                     #ff0000, 
-                    #df4bcb,
-                    #ff3c00,
+                    #e93e38,
+                    #c234e6,
                     #340edf);
   animation: .8s shake infinite alternate;
   align-self: center;

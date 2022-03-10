@@ -79,6 +79,17 @@
       margin-left:25%;
 
     }
+    .font1{
+      
+      font-size:xx-large;
+    }
+    .font{
+      text-align: center;
+      font-size:20px;
+      padding-left:30px;
+      padding-right:30px;
+      padding-bottom:30px;
+    }
   }
 
   @media only screen and (min-width: 600px) and (max-device-width: 830px) {
@@ -97,6 +108,7 @@
       /* font-size:40px; */
       
   }
+ 
     .dot{
       display: none;
     }
@@ -139,6 +151,15 @@
       /* margin-top: -85%; */
 
     }
+    .font1{
+      margin-top:300%;
+      font-size:xx-large;
+    }
+    .font{
+      font-size:30px;
+      padding-left:30px;
+      padding-right:30px;
+    }
   }
 /*     @media only screen and (min-width:760px) {
    	.imgheight{
@@ -156,6 +177,13 @@
       width:70%;
       margin-left:15%;
       
+  }
+  .font1{
+    margin-top:10%;
+  }
+  .font{
+    font-size:15px;
+    margin-top:5%;
   }
     .content{
       padding: 15px 15px 15px 17px;
